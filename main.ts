@@ -1,4 +1,4 @@
-scene.setBackgroundColor(4)
+scene.setBackgroundColor(6)
 let mySprite = sprites.create(img`
     . . . . . f f 4 4 f f . . . . . 
     . . . . f 5 4 5 5 4 5 f . . . . 
@@ -17,9 +17,9 @@ let mySprite = sprites.create(img`
     . . . f f 1 d 1 d 1 d f f . . . 
     . . . . . f f b b f f . . . . . 
     `, SpriteKind.Player)
-mySprite.sayText("Hello")
+mySprite.sayText("hi")
 pause(100)
 mySprite.sayText("World")
 game.onUpdateInterval(500, function () {
-    effects.confetti.startScreenEffect()
+    effects.starField.startScreenEffect()
 })
